@@ -11,8 +11,11 @@ entertianment = (random.choice(fun_time))
 
 wheels = ["jet", "viper", "hellcat", "infiniti coupe", "yukon",]
 transportation = (random.choice(wheels))
+
 round_trip = ["landscape:", "food:", "event:", "vehicle:"]
 good_choice = input("Do you want to travel here?")
+
+
 
 def arrival():
     for city in destination:
