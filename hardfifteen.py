@@ -55,6 +55,47 @@ def dinner():
     
 dinner()
 
+def date_option():
+    isHappy = False
+    while isHappy == False: 
+      entertianment = (random.choice(fun_time))
+      print(f"Your evening event consist of {entertianment}")
+      good_night = input("Do you like this event?")
+      if good_night == "yes":
+          round_trip.append(entertianment)
+          print("Good Evening of Fun!", round_trip)
+          isHappy = True
+      else: 
+          continue
+
+      return(entertianment)
+
+date_option()
+
+
+def luxury():
+    isHappy = False
+    while isHappy == False: 
+      transportation = (random.choice(wheels))
+      print(f"Your ride consist of {transportation}")
+      good_wheels = input("Do you like your choice of wheels?")
+      if good_wheels == "yes":
+        round_trip.append(transportation)
+        print("Not bad!!", round_trip)
+        isHappy = True
+      else:
+          continue
+      
+      return(transportation)
+    
+luxury()
+
+
+day_trip = input("Your day trip consist of")
+epic_night = input("Enjoy The Experience! Take plenty of pictures")
+round_trip = []
+print("day_trip", "round_trip", "epic_night")
+
 
 
 
