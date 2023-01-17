@@ -1,7 +1,7 @@
 import random
 
 location = ["oakland", "seattle", "san jose", "san diego", "boston", "detroit"]
-destination = (random.choice (location))
+destination = random.choice(location)
 
 eat_eat = [ "tacos", "seafood gallery", "coney island", "steakhouse", "roscos"]
 restuarant = (random.choice(eat_eat))
@@ -12,24 +12,30 @@ entertianment = (random.choice(fun_time))
 wheels = ["jet", "viper", "hellcat", "infiniti coupe", "yukon",]
 transportation = (random.choice(wheels))
 
-round_trip = ["landscape:", "food:", "event:", "vehicle:"]
-good_choice = input("Do you want to travel here?")
+round_trip = []
 
 
 
 def arrival():
-    for city in destination:
-        print(destination, good_choice)
+
+    isHappy = False
+    while isHappy == False:
+        destination = (random.choice(location))
+        print(f"Your destination is {destination}")
+        good_choice = input("Do you want to travel here?")
         if good_choice == "yes":
-            round_trip.append(destination[0])
+            round_trip.append(destination)
+            print("Awesome.", round_trip)
+            isHappy = True
         else:
             continue
 
-        return(destination)
+    return(destination)
     
 arrival()
 
-#Im attemping to perform a function where it will print a random city location and upon agreement, it will be added to a list
+
+#Im attemping to perform a function where itye will print a random city location and upon agreement, it will be added to a list
 
 
 
